@@ -10,88 +10,147 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
-  <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-a" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-b" aria-hidden="true"></div>
 
-  <header class="site-header">
+  <header class="top-nav">
     <div class="container">
-      <p class="header-kicker">In Loving Memory</p>
-      <h1>Ronyell Whitaker</h1>
-      <p class="lead">A tribute page honoring his life, legacy, and loved ones.</p>
-      <div class="hero-actions">
-        <a class="hero-btn hero-btn-primary" href="#donate">Support Family</a>
-        <a class="hero-btn hero-btn-ghost" href="#legacy-coin">Legacy Coin</a>
-      </div>
+      <a class="brand" href="#top">Ronyell Whitaker Memorial</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#story">Story</a>
+        <a href="#events">Events</a>
+        <a href="#donate">Support</a>
+        <a href="#guestbook">Guestbook</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="container hero-grid">
-        <article class="card reveal">
-          <h2>Obituary</h2>
-          <p>
-            We honor the life and memory of <strong>Ronyell Whitaker</strong>. He inspired fans and teammates
-            through dedication, resilience, and heart both on and off the field.
-          </p>
-          <p>
-            His legacy lives on in the people he encouraged and in the family who loved him deeply.
-            This page is dedicated to his memory and to helping his loved ones.
-          </p>
-          <div class="quote-block">
-            <p>"Gone from our sight, never from our hearts."</p>
-          </div>
-        </article>
-        <aside class="photo-card reveal">
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-wrap reveal">
+        <div class="hero-photo-frame">
           <img src="assets/player-photo.jpg" alt="Photo of Ronyell Whitaker" onerror="this.src='assets/player-photo-placeholder.svg';">
-          <p class="muted photo-note">Add your image as <code>assets/player-photo.jpg</code> anytime.</p>
-        </aside>
+        </div>
+        <div class="hero-copy">
+          <p class="kicker">In Loving Memory</p>
+          <h1>Ronyell Whitaker</h1>
+          <p class="date-line">1979 - 2026 | Age 46</p>
+          <p class="lead">A beloved player, teammate, and father figure to many in the football community.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#donate">Support Family</a>
+            <a class="btn btn-secondary" href="#legacy-coin">Legacy Coin</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="container reveal">
+        <div class="story-layout">
+          <article class="panel">
+            <h2>Obituary</h2>
+            <p>
+              We honor the life and memory of <strong>Ronyell Whitaker</strong>, whose discipline, resilience,
+              and presence left a meaningful mark on every locker room and every fan who watched him play.
+            </p>
+            <p>
+              He will be remembered not only for football, but for the encouragement he gave to younger players,
+              the love he showed his family, and the way he carried himself with quiet strength.
+            </p>
+            <blockquote>"Gone from our sight, never from our hearts."</blockquote>
+          </article>
+          <aside class="panel panel-soft">
+            <h3>Legacy Highlights</h3>
+            <ul class="highlights">
+              <li>Respected athlete and mentor</li>
+              <li>Inspired teammates and supporters</li>
+              <li>Loved deeply by family and friends</li>
+              <li>A lasting presence in football memory</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container reveal">
+        <h2 class="section-title">Memorial Events</h2>
+        <div class="event-grid">
+          <article class="event-card">
+            <p class="event-kicker">Visitation</p>
+            <h3>Family and Friends Gathering</h3>
+            <p>Add date, time, location, and contact details here.</p>
+          </article>
+          <article class="event-card">
+            <p class="event-kicker">Service</p>
+            <h3>Celebration of Life</h3>
+            <p>Add ceremony details and guidance for attendees.</p>
+          </article>
+          <article class="event-card">
+            <p class="event-kicker">Reception</p>
+            <h3>Community Remembrance</h3>
+            <p>Optional post-service location and family message.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section" id="legacy-coin">
-      <div class="container card reveal">
-        <h2>Legacy Coin</h2>
-        <p class="muted token-line">Token Name: <strong>Ronyell Whitaker Legacy</strong> | Symbol: <strong>$RWL</strong></p>
-        <p>
-          A memorial memecoin created to celebrate his legacy and unite supporters.
-          This is a tribute community token with family support at the center.
-        </p>
-        <div class="stats-grid">
-          <div class="stat-pill"><span>Total Supply</span><strong>1,000,000,000</strong></div>
-          <div class="stat-pill"><span>Family Wallet</span><strong>10%</strong></div>
-          <div class="stat-pill"><span>Liquidity</span><strong>Locked</strong></div>
+      <div class="container reveal">
+        <div class="panel">
+          <h2>Legacy Coin</h2>
+          <p class="muted token-line">Token Name: <strong>Ronyell Whitaker Legacy</strong> | Symbol: <strong>$RWL</strong></p>
+          <p>
+            A memorial community token built to celebrate his legacy while directing support to his family.
+          </p>
+          <div class="token-stats">
+            <div class="token-stat"><span>Total Supply</span><strong>1,000,000,000</strong></div>
+            <div class="token-stat"><span>Family Allocation</span><strong>10%</strong></div>
+            <div class="token-stat"><span>Liquidity</span><strong>Locked</strong></div>
+          </div>
+          <p class="muted legal-note">Not financial advice. Verify all links and wallet addresses before sending funds.</p>
         </div>
-        <p class="muted legal-note">Not financial advice. Verify all links and wallet addresses before sending funds.</p>
       </div>
     </section>
 
     <section class="section" id="donate">
-      <div class="container donation-card reveal">
-        <h2>Donation Address</h2>
-        <p class="donation-label">Crypto Wallet Address</p>
-        <div class="wallet-row">
-          <code id="wallet-address">0xREPLACE_WITH_YOUR_WALLET_ADDRESS</code>
-          <button id="copy-wallet-btn" type="button">Copy</button>
+      <div class="container reveal">
+        <div class="panel panel-donate">
+          <h2>Family Support</h2>
+          <p class="muted">If you would like to support his family directly, use the verified wallet below.</p>
+
+          <p class="donation-label">Donation Wallet Address</p>
+          <div class="wallet-row">
+            <code id="wallet-address">0xREPLACE_WITH_YOUR_WALLET_ADDRESS</code>
+            <button type="button" class="btn-copy" data-copy-target="wallet-address">Copy</button>
+          </div>
+
+          <p class="donation-label donation-label-top">Legacy Coin Contract (optional)</p>
+          <div class="wallet-row">
+            <code id="contract-address">0xREPLACE_WITH_TOKEN_CONTRACT</code>
+            <button type="button" class="btn-copy" data-copy-target="contract-address">Copy</button>
+          </div>
+
+          <p id="copy-status" class="copy-status" aria-live="polite"></p>
         </div>
-        <p class="donation-label donation-label-top">Legacy Coin Contract (optional)</p>
-        <div class="wallet-row">
-          <code id="contract-address">0xREPLACE_WITH_TOKEN_CONTRACT</code>
-          <button id="copy-contract-btn" type="button">Copy</button>
-        </div>
-        <p id="copy-status" class="copy-status" aria-live="polite"></p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container card reveal">
-        <h2>Community Message Wall</h2>
-        <p class="muted">Leave a short tribute message below.</p>
-        <form id="tribute-form" class="tribute-form">
-          <input id="tribute-input" type="text" maxlength="120" placeholder="Forever in our hearts...">
-          <button type="submit">Post</button>
-        </form>
-        <ul id="tribute-list" class="tribute-list"></ul>
+    <section class="section" id="guestbook">
+      <div class="container reveal">
+        <div class="panel">
+          <h2>Digital Guestbook</h2>
+          <p class="muted">Share a memory or short tribute message.</p>
+          <form id="tribute-form" class="tribute-form">
+            <input id="tribute-name" type="text" maxlength="30" placeholder="Your name">
+            <textarea id="tribute-input" maxlength="180" placeholder="Forever in our hearts..."></textarea>
+            <div class="form-meta">
+              <span id="char-count">0/180</span>
+              <button type="submit">Post Tribute</button>
+            </div>
+          </form>
+          <ul id="tribute-list" class="tribute-list"></ul>
+        </div>
       </div>
     </section>
   </main>
