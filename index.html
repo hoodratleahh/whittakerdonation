@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In Loving Memory | Obituary & Family Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="header-kicker">Memorial Tribute</p>
+      <h1 data-reveal>In Loving Memory of <span class="name-placeholder">[PLAYER_NAME]</span></h1>
+      <p class="lead" data-reveal>
+        A beloved athlete, teammate, and inspiration whose legacy will continue to live on.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container hero-grid">
+        <article class="card" data-reveal>
+          <h2>Obituary</h2>
+          <p>
+            We honor the life and memory of <strong>[PLAYER_NAME]</strong>, who touched countless lives
+            through his strength, dedication, and heart. On and off the field, he represented commitment,
+            humility, and the spirit of perseverance.
+          </p>
+          <p>
+            His presence brought joy to fans, pride to his family, and respect across the football community.
+            Though he is gone too soon, his impact remains with everyone who knew him and followed his journey.
+          </p>
+        </article>
+        <aside class="photo-card" data-reveal>
+          <img src="assets/player-photo-placeholder.svg" alt="Memorial photo of [PLAYER_NAME]">
+          <p class="muted photo-note">
+            Replace this image file in <code>memorial-donation-site/assets/</code> with your real player photo.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card" data-reveal>
+        <h2>Leave a Virtual Candle</h2>
+        <p>Fans and supporters can light a virtual candle as a sign of respect.</p>
+        <div class="candle-row">
+          <button id="light-candle-btn" type="button">Light Candle</button>
+          <p class="candle-count"><span id="candle-count">0</span> candles lit</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card" data-reveal>
+        <h2>Memories & Legacy</h2>
+        <details class="memory-item">
+          <summary>On-field impact</summary>
+          <p>Known for discipline, leadership, and commitment to every game day.</p>
+        </details>
+        <details class="memory-item">
+          <summary>Off-field character</summary>
+          <p>Remembered as humble, respectful, and supportive of teammates and fans.</p>
+        </details>
+        <details class="memory-item">
+          <summary>Message to supporters</summary>
+          <p>Thank you for honoring his legacy and standing with his family in this difficult time.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card" data-reveal>
+        <h2>A Message to Family and Supporters</h2>
+        <p>
+          During this difficult time, we stand with his family and loved ones. If you would like to offer
+          support, donations can be sent directly using the wallet address below.
+        </p>
+        <p class="muted">
+          Please verify details carefully before sending. You can replace the address with your preferred one.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container donation-card" data-reveal>
+        <h2>Family Support Donation Address</h2>
+        <p class="donation-label">Crypto Wallet Address</p>
+        <div class="wallet-row">
+          <code id="wallet-address">0xREPLACE_WITH_YOUR_WALLET_ADDRESS</code>
+          <button id="copy-wallet-btn" type="button">Copy</button>
+        </div>
+        <div class="quick-amounts">
+          <p class="muted quick-title">Suggested contribution ideas (optional):</p>
+          <div class="amount-btns">
+            <button type="button" class="amount-btn" data-amount="$10">$10</button>
+            <button type="button" class="amount-btn" data-amount="$25">$25</button>
+            <button type="button" class="amount-btn" data-amount="$50">$50</button>
+          </div>
+          <p id="amount-note" class="copy-status" aria-live="polite"></p>
+        </div>
+        <p id="copy-status" class="copy-status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Forever remembered. Forever honored.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

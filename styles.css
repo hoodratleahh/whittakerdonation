@@ -1,0 +1,247 @@
+:root {
+  --bg: #0c1018;
+  --bg-elevated: #151d2b;
+  --text: #ecf1ff;
+  --muted: #a8b4cf;
+  --accent: #7ea6ff;
+  --accent-strong: #5b8dff;
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #1b2942 0%, var(--bg) 45%);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.header-kicker {
+  margin: 0 0 0.8rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.lead {
+  margin: 0 auto;
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.name-placeholder {
+  color: var(--accent);
+}
+
+.section {
+  padding: 0 0 1.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+@media (max-width: 860px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card,
+.donation-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.card p {
+  margin: 0 0 1rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.photo-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.photo-card img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  border: 1px solid var(--border);
+}
+
+.photo-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.85rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.candle-row {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.candle-count {
+  margin: 0;
+  color: var(--muted);
+}
+
+.memory-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 0.7rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.memory-item:last-child {
+  margin-bottom: 0;
+}
+
+.memory-item summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.memory-item p {
+  margin: 0.65rem 0 0;
+}
+
+.donation-card {
+  border-color: rgba(126, 166, 255, 0.45);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.donation-label {
+  margin: 0 0 0.7rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.wallet-row {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+code {
+  display: inline-block;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  color: #dce7ff;
+  font-size: 0.88rem;
+  word-break: break-all;
+}
+
+button {
+  border: 1px solid rgba(126, 166, 255, 0.5);
+  background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+.quick-amounts {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.quick-title {
+  margin: 0 0 0.5rem;
+}
+
+.amount-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.amount-btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.86rem;
+}
+
+.copy-status {
+  min-height: 1.2em;
+  margin: 0.8rem 0 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  padding: 2rem 0 3rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

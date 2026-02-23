@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Memorial photo placeholder</title>
+  <desc id="desc">Replace this image with the player photo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e2a42"/>
+      <stop offset="100%" stop-color="#0c1018"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="380" r="140" fill="#2f446c"/>
+  <rect x="225" y="560" width="450" height="320" rx="28" fill="#2a3e64"/>
+  <text x="450" y="965" text-anchor="middle" fill="#d7e3ff" font-family="Inter, Arial, sans-serif" font-size="36">
+    Replace with player photo
+  </text>
+</svg>
