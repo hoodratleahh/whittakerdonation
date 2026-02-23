@@ -645,3 +645,173 @@ button:hover {
   margin-bottom: 0.2rem;
   font-weight: 700;
 }
+
+/* ---- Dark futuristic force theme ---- */
+:root {
+  --bg: #050507;
+  --bg-elevated: #0c0d12;
+  --text: #edf3ff;
+  --muted: #93a0b8;
+  --accent: #56b8ff;
+  --accent-strong: #2f8dff;
+  --accent-soft: #89ceff;
+  --border: rgba(137, 206, 255, 0.2);
+}
+
+body {
+  background: radial-gradient(circle at top, #121722 0%, #090b10 42%, #050507 78%);
+}
+
+.top-nav {
+  background: rgba(5, 6, 9, 0.85);
+  border-bottom-color: rgba(137, 206, 255, 0.12);
+}
+
+.panel,
+.event-card,
+.card,
+.photo-card,
+.donation-card {
+  background: linear-gradient(180deg, rgba(10, 13, 20, 0.92), rgba(6, 8, 12, 0.9));
+  border-color: rgba(137, 206, 255, 0.2);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.5);
+}
+
+.panel-donate {
+  background: linear-gradient(180deg, rgba(25, 45, 72, 0.5), rgba(8, 11, 17, 0.92));
+}
+
+.hero-photo-frame {
+  background: linear-gradient(180deg, rgba(137, 206, 255, 0.2), rgba(8, 10, 14, 0.4));
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.6);
+}
+
+.bg-glow-a {
+  background: rgba(86, 184, 255, 0.12);
+}
+
+.bg-glow-b {
+  background: rgba(47, 141, 255, 0.09);
+}
+
+.btn-primary,
+.btn-copy,
+button {
+  background: linear-gradient(180deg, #3fbcff, #2f8dff);
+  border-color: rgba(137, 206, 255, 0.45);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+code {
+  background: #0a0d14;
+  border-color: rgba(137, 206, 255, 0.28);
+}
+
+.kicker,
+.date-line,
+.event-kicker,
+.tribute-author {
+  color: var(--accent-soft);
+}
+
+/* ---- Final polish layer ---- */
+a,
+button,
+input,
+textarea {
+  transition: all 0.22s ease;
+}
+
+.brand:hover,
+.nav-links a:hover {
+  color: #d8ecff;
+}
+
+.btn:hover,
+.btn-copy:hover,
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(47, 141, 255, 0.28);
+}
+
+.btn:active,
+.btn-copy:active,
+button:active {
+  transform: translateY(0);
+}
+
+.btn:focus-visible,
+.btn-copy:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(137, 206, 255, 0.8);
+  outline-offset: 2px;
+}
+
+.support-badge {
+  margin: 0.6rem 0 0.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  color: #bde8ff;
+  background: rgba(47, 141, 255, 0.14);
+  border: 1px solid rgba(137, 206, 255, 0.35);
+}
+
+.copy-status {
+  font-weight: 600;
+}
+
+.top-nav .container {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+@media (max-width: 760px) {
+  .top-nav .container {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0.6rem 0;
+    gap: 0.35rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 0.7rem;
+  }
+
+  .hero-wrap {
+    gap: 0.9rem;
+  }
+
+  .hero-photo-frame img {
+    min-height: 320px;
+  }
+
+  .panel,
+  .event-card {
+    padding: 1rem;
+  }
+
+  code {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

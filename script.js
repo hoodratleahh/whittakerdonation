@@ -32,11 +32,18 @@
     revealEls.forEach((el) => observer.observe(el));
   }
 
-  async function copyText(value, okLabel) {
+  async function copyText(value, okLabel, button) {
     if (!status || !value) return;
     try {
       await navigator.clipboard.writeText(value);
       status.textContent = okLabel;
+      if (button) {
+        const original = button.textContent;
+        button.textContent = "Copied";
+        setTimeout(() => {
+          button.textContent = original;
+        }, 1100);
+      }
     } catch (err) {
       status.textContent = "Copy failed. Select and copy manually.";
     }
@@ -83,7 +90,7 @@
         const target = targetId ? document.getElementById(targetId) : null;
         const value = target ? target.textContent.trim() : "";
         const label = targetId === "contract-address" ? "Token contract copied." : "Donation wallet copied.";
-        await copyText(value, label);
+        await copyText(value, label, button);
       });
     });
   }
@@ -103,6 +110,12 @@
       .reverse()
       .forEach((entry) => renderEntry(entry));
 
+    if (!stored.length) {
+      const starter = document.createElement("li");
+      starter.textContent = "Be the first to leave a tribute message.";
+      list.appendChild(starter);
+    }
+
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const text = input.value.trim();
@@ -110,6 +123,9 @@
 
       const name = nameInput ? nameInput.value.trim() : "";
       const entry = { name, message: text };
+      if (list.children.length === 1 && list.firstElementChild && list.firstElementChild.textContent === "Be the first to leave a tribute message.") {
+        list.innerHTML = "";
+      }
       renderEntry(entry);
 
       const entries = getStoredEntries();

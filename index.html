@@ -118,17 +118,18 @@
         <div class="panel panel-donate">
           <h2>Family Support</h2>
           <p class="muted">If you would like to support his family directly, use the verified wallet below.</p>
+          <p class="support-badge">Direct family support verified by page admin</p>
 
           <p class="donation-label">Donation Wallet Address</p>
           <div class="wallet-row">
-            <code id="wallet-address">0xREPLACE_WITH_YOUR_WALLET_ADDRESS</code>
-            <button type="button" class="btn-copy" data-copy-target="wallet-address">Copy</button>
+            <code id="wallet-address">update in the next 4 minutes</code>
+            <button type="button" class="btn-copy" data-copy-target="wallet-address" aria-label="Copy donation wallet address">Copy</button>
           </div>
 
           <p class="donation-label donation-label-top">Legacy Coin Contract (optional)</p>
           <div class="wallet-row">
             <code id="contract-address">going to update in the next 4 minutes</code>
-            <button type="button" class="btn-copy" data-copy-target="contract-address">Copy</button>
+            <button type="button" class="btn-copy" data-copy-target="contract-address" aria-label="Copy token contract address">Copy</button>
           </div>
 
           <p id="copy-status" class="copy-status" aria-live="polite"></p>
@@ -142,8 +143,8 @@
           <h2>Digital Guestbook</h2>
           <p class="muted">Share a memory or short tribute message.</p>
           <form id="tribute-form" class="tribute-form">
-            <input id="tribute-name" type="text" maxlength="30" placeholder="Your name">
-            <textarea id="tribute-input" maxlength="180" placeholder="Forever in our hearts..."></textarea>
+            <input id="tribute-name" type="text" maxlength="30" placeholder="Your name" aria-label="Your name">
+            <textarea id="tribute-input" maxlength="180" placeholder="Forever in our hearts..." aria-label="Tribute message"></textarea>
             <div class="form-meta">
               <span id="char-count">0/180</span>
               <button type="submit">Post Tribute</button>
